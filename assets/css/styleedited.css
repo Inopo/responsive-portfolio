@@ -110,7 +110,7 @@ h3 {
   background: #fff;
   border-bottom: 2px solid #ccc;
 }
-/* logo nun width ini 640 yapiyorum... media inqueriyde hic bir degisiklige sebeb olmayinca sasridim*/
+
 #logo {
   width: 250px;
   height: 90px;
@@ -161,6 +161,15 @@ footer {
 
 /*sidebar*/
 
+.sidebarport {
+  padding: 30px;
+  width: 100%;
+  max-width: 270px;
+  float: right;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
 .sidebar {
   padding: 30px;
   width: 100%;
@@ -170,7 +179,13 @@ footer {
   background: #fff;
   border: 1px solid #ddd;
 }
-
+h3,
+.sidebarport h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
 h3,
 .sidebar h2 {
   padding-bottom: 20px;
@@ -199,7 +214,7 @@ h3,
 
 .main-section {
   padding: 30px;
-  margin: 0 0 40px 0;
+  margin: 0 0 40 0;
   width: 100%;
   max-width: 650px;
   float: left;
@@ -248,6 +263,8 @@ h3,
   margin-top: 10px;
   margin-right: 25px;
   float: left;
+
+
 }
 
 
@@ -293,45 +310,126 @@ input[type=submit] {
 
 /*Media inquires should be written to the bottom of the page (I am not quite sure)*/
 @media screen and (max-width: 980px) and (min-width: 768px) {
+ 
+/* changes related to index*/
+  .auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 0px;
+  float: none;
 
+}
+/* end of changes related to index*/
+.work {
+  float: none;
+  margin: 0px;
+}
+.work:nth-child(even) {
+  margin: 0px;
+}
 
 
 }
 @media screen and (max-width: 768px) and (min-width: 640px) {
+/* changes related to index*/
+.sidebarport {
+ 
+      max-width: 80%;
+      margin-right: 10%; 
+  }
+
+  .sidebar {
+ 
+     max-width: 80%;
+     margin-right: 10%;
+}
+  .auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  float: left;
 
 
 }
+#main-container {
+  padding-top: 70px;
+}
+
+.main-section {
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 10px;
+    max-width: 90%;
+
+}
+/* end of changes related to index*/
+}
+
 @media screen and (max-width:640px) {
+/* changes related to index*/
+#masthead {
+  position: static;
+}
+#main-container {
+  padding-top: 10px;
+}
 
 #logo {
 
-  width: 100%;
+    width: 100%;
 }
 nav {
 
-clear: both;
+    clear: both;
 
-width: 100%;
+    width: 100%;
 }
 
 nav a {
-width: 100px;
-margin-left: 10%;
+    width: 100px;
+    margin-left: 10%;
 
 }
 .main-section {
-  margin-top: 60px;
-  margin-left: 30px;
-  margin-right: 10px;
-  max-width: 90%;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 10px;
+    max-width: 90%;
 
 
+}
+
+.sidebarport {
+ 
+     max-width: 80%;
+     margin-right: 10%;
 }
 
 .sidebar {
  
- max-width: 80%;
- margin-right: 10%;
+     max-width: 80%;
+     margin-right: 10%;
 }
 
+.sidebarport {
+display: none;
+
+}
+  .auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  float: none;
+
+}
+.work {
+  float: none;
+  margin: auto;
+}
+.work:nth-child(even) {
+  margin: auto;
+}
 }
